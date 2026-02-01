@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+:root {
+    --primary-color: #5d4037;
+    /* חום שוקולד */
+    --secondary-color: #d4a373;
+    /* גוון עוגייה */
+    --accent-color: #faedcd;
+    /* שמנת */
+    --text-color: #333;
+    --bg-color: #edcea7;
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.header-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0;
+    font-family: serif;
+    /* סגנון אלגנטי */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.nav-link.active {
+    color: var(--secondary-color);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.cart-badge {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Footer */
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--accent-color);
+    /* גוון השמנת */
+    border-top: 1px solid var(--secondary-color);
+    margin-top: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: var(--primary-color);
+    /* חום שוקולד */
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    padding: 0.6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    /* Make them circular */
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: #fff;
+}
+
+/* מבנה העמוד כדי שהפוטר תמיד יהיה למטה */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fdfaf7;
+    /* גוון רקע רך שמתאים לשוקולד-שמנת */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-top: 2rem;
+    text-align: left;
+    /* יישור לימין */
+    direction: rtl;
+    /* כיוון מימין לשמאל */
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    padding: 3rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Cake Card Styles */
+.cake-card {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(93, 64, 55, 0.1);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.cake-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(93, 64, 55, 0.15);
+}
+
+.cake-image-container {
+    width: 100%;
+    height: 200px;
+    background-color: var(--accent-color);
+    overflow: hidden;
+}
+
+.cake-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.cake-card:hover .cake-image {
+    transform: scale(1.1);
+}
+
+.cake-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-grow: 1;
+}
+
+.cake-name {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-family: serif;
+}
+
+.cake-price {
+    margin: 0;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+.cake-details {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    line-height: 1.4;
+}
+
+.add-to-cart-btn {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+/* Modern Cart Styles */
+.cart-modern {
+    text-align: left;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.empty-cart {
+    padding: 5rem 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .cart-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cart-items-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item-modern {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-modern:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.item-price {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.cart-item-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.quantity-selector button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.quantity-selector button:hover {
+    color: var(--secondary-color);
+}
+
+.quantity-selector span {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+.cart-summary {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0;
+    color: var(--text-color);
+    font-size: 1.05rem;
+}
+
+.summary-row.total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+
+.checkout-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 163, 115, 0.3);
+}

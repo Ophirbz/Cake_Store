@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Chocolate Cake",
+        "price": 45,
+        "ingredients": "Dark chocolate, cream, gold flakes",
+        "calories": 450,
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Strawberry Dream",
+        "price": 38,
+        "ingredients": "Fresh strawberries, vanilla sponge",
+        "calories": 320,
+        "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Salted Caramel",
+        "price": 42,
+        "ingredients": "Caramel, sea salt, pecans",
+        "calories": 510,
+        "image": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Vanilla Bean",
+        "price": 40,
+        "ingredients": "Vanilla bean, cream, sugar",
+        "calories": 400,
+        "image": "https://plus.unsplash.com/premium_photo-1663839331055-d0c9bcb2929f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 5,
+        "name": "Molten Midnight",
+        "price": 48,
+        "ingredients": "Dark chocolate, butter, vanilla, powdered sugar",
+        "calories": 460,
+        "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 6,
+        "name": "Golden Ember Lava",
+        "price": 52,
+        "ingredients": "Dark chocolate, cream, edible gold leaf",
+        "calories": 470,
+        "image": "https://images.unsplash.com/photo-1706463996571-7a2d9bb5e5fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R29sZGVuJTIwRW1iZXIlMjBMYXZhJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+        "id": 7,
+        "name": "Raspberry Luxe Lava",
+        "price": 50,
+        "ingredients": "Dark chocolate, cream, raspberries, mint",
+        "calories": 455,
+        "image": "https://images.unsplash.com/photo-1710077801357-96fce895714a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UmFzcGJlcnJ5JTIwTHV4ZSUyMExhdmElMjBjYWtlfGVufDB8fDB8fHww"
+    },
+    {
+        "id": 8,
+        "name": "Velvet Core Lava",
+        "price": 49,
+        "ingredients": "Dark chocolate, butter, espresso, cocoa powder",
+        "calories": 465,
+        "image": "https://plus.unsplash.com/premium_photo-1714342967641-ea23c8409cbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFZlbHZldCUyMENvcmUlMjBMYXZhJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+        "id": 9,
+        "name": "Golden Raspberry Melt",
+        "price": 53,
+        "ingredients": "Dark chocolate, cream, raspberries, edible gold leaf",
+        "calories": 480,
+        "image": "https://images.unsplash.com/photo-1736631685467-ea400dfb3220?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8R29sZGVuJTIwUmFzcGJlcnJ5JTIwTWVsdCUyMGNha2V8ZW58MHx8MHx8fDA%3D"
+    }
+]
